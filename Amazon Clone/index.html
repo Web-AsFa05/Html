@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                 </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class=" search-icon">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div  class="indianflag border">
+                <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAnFBMVEX/mTMSiAf/////lyr//fkAgwAAAIgAAH4AAIUAAIIAAIMAAHMAAHbk5PDg4O7w8Pfp6fP5+f2lpctHR52Njb5BQZu+vtqrq8/ExN20tNSHh7tLS5/19fp/f7djY6mZmcXOzuXW1ugmJpE5OZgNDYtsbK1YWKRRUaF5ebQZGY7R0eWYmMUyMpcgIJBhYa3Bwd8/P5smJpNycrEwMJjLpwQ3AAAEs0lEQVR4nO2ba3eiSBCGnd7dvsgdEQFBxUtMos4kk///37Yaci9PducLnXN4H48K6IfisbqradrJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAP+Qt8ZiLAZ+CEAyccOOHACQdOON/BSZxnq/n58TxfZXnsOhjxDZwE2Z0yU62llFpPjbrLAtchOXZyf1RTK0NqpZS2G3Kqlvdug3LqJD6SB2nMz1u1jIJoqW5XxpAidXTahFw6WdvMMOYkEpFH4l5EOW2tjbFZs3YYl0MnN4bOvVmcI7Gxu6V92YjovKjIlTm6C8yZk/pC6TALE7u9+PiShDP67FK7Cs2Vk5q6U6NSUdidIqSXjJ5hv0utinJIRo5ic+WEssQsmlgkNjNq6+MnPTObG4tExM2CpFwcxebIyVFLlXdbqS0xS3qen9/jtDv+S0ntqE9x4+RkKEvEr27bnviKxOxJx+p5n5QIyhTjpvo4cRJQDqis70JESq0npZPXVJwpRRZdmtgPqfooJ2NaJ05mWs/Wtgdd2bIja9FuRaISsW1FLelIYvMlWtuvuQjPhZONekmAhAYnolyKxI9rv479RCwpa6JdV6FtOqmNg/hcOKHfv0q6qisiSXJ0KbYpOUm3IqcWFDwX4SKp3CSKAyehkqbs+xG7cy9KJZpd7Me7RqhStMqOVrp+pTSy3xkWB04qGprYnz84WisbLxf7Q+EH9CgOe5F7trksjrZxzWiQUg0foAMne6qxfetIJeVL7i02XmBaegTeZuHRoVL2Y5RobeR++ACHd0JNR75sRzPqS1KvuK2q4qmoqtvCS0Uu56+jeumiHA/vpDT6UG/Koj/vUu03uR88tWmTtk+Bn9/vVXeFLOqi3NQHbcrBIxzeSaO7PiI8LVdpSxsrrwkew+rh4aEKL2Hl2TFLmx6WWfv25WEZ3smNln5fiIPTo3duiqDZBjM7kWRmwbYJNtXOvzv15abwpb4ZPMLhnTzStd3r1EiUPihVtc1UWqZNmxm1S19nHuuj1tvBIxzeCXWbbxMjdRSHYZHOdedEz9MiDOPobTYpetchD8bwTujKzmpofh/3xvN84lKdZc8ue1J0wPOUnB2adR5SkdKDR4g84QzvZMv6k2z0/cn7unNB3el4GZ9kH8cn84f5eMcnGMdyAlzvcHBdzPmj+ZPpOOZPMM92hf+cj+3HJ2Oaj30/b7/r5+3F6Oftu/s7J5sMX93fiU/0taWL8JzeBzzZnav3AU+juw8oqMZSN/v1/eJyXPeL/8+6gnxs6wqw/uQaWKd0hfpx+uV6tun41rMRN+qrdY/DT5u84nJ9bHptfexp1OtjX9ZRT7GO+gNX19sfx7ze3oL/ZVyl///OFv/f+cbACQdOOHDCgRPO5G/wmck/4DOTH+AzcMKBEw6ccOCEAyccOOHACQdOOHDCgRMOnHDghAMnHDjhwAkHTjhwwoETDpxw4IQDJxw44cAJB044cMKBEw6ccOCEAyccOOHACQdOOHDCgRMOnHDghAMnHDjhwAkHTjhwwoETDpxw4IQDJxw44cAJB044cMKBEw6ccOCEAyccOOHACQdOOHDCgRMOnHD+BbFYJ4t2z9g0AAAAAElFTkSuQmCC"
+                alt=""
+              />
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div class="nav-signin border">
+                <p><span>Hello, Sign in</span></p>
+                <p class="nav-second">Account & List</p>
+            </div>
+            
+            <div class="nav-return border">
+                <p><span>Return</span></p>
+                <p class="nav-second">& Order</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                cart
+            </div>
+            </div>
+        <div>
+        <div class="panel">
+                <div class="panel-all border">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </div>
+                <div class="panel-ops">
+                    <p class="border">Fresh</p>
+                    <p class="border">MX Player</p>
+                    <p class="border">Sell</p>
+                    <p class="border">Best sellers</p>
+                    <p class="border">Today Deals</p>
+                    <p class="border">Mobiles</p>
+                    <p class="border">Electronics</p>
+                </div>
+                <div class="panel-deals border">
+                    Shop deals in Electronics
+                </div>
+            </div>
+    </header>
+   
+    <div class="herose-section">
+        
+    </div>
+</body>
+</html>
